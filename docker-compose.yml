@@ -8,8 +8,9 @@ services:
         ports:
             - 80:80
             - 443:443
+        volumes_from:
+          - wordpress
         volumes:
-            - ./htdocs:/var/www/html
             - ./site.conf:/etc/nginx/conf.d/default.conf
         networks:
             - wp-network
