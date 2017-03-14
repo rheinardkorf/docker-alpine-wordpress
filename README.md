@@ -26,6 +26,8 @@ cd my-site
 docker-compose up -d
 ```
 
+Note: The first time you run `docker-compose` it might take a while to download the Docker images.
+
 This will spin up a few Docker containers:
 
 * nginx - Which acts as a proxy for your site and the PHP FPM server.  
